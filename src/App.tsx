@@ -381,19 +381,22 @@ export default function App() {
           </div>
         </section>
 
-        <footer className={`flex flex-col items-center gap-4 border-t pt-8 ${footerBorder}`}>
-          <a
-            href="https://www.buymeacoffee.com"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl bg-amber-400 px-5 py-3 text-sm font-semibold text-slate-900 shadow-md transition hover:bg-amber-300"
-          >
-            <span aria-hidden>☕</span>
-            Buy me a coffee
-          </a>
-          <p className={`text-center text-xs ${muted}`}>
+        <footer className={`flex flex-col items-center gap-3 border-t pt-8 text-center ${footerBorder}`}>
+          <p className={`text-xs ${muted}`}>
             Works offline after load. No keys are sent to a server.
           </p>
+          <a
+            href="https://ananthu.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={
+              isDark
+                ? 'text-sm font-medium text-teal-400 underline-offset-4 transition hover:text-teal-300 hover:underline'
+                : 'text-sm font-medium text-teal-700 underline-offset-4 transition hover:text-teal-800 hover:underline'
+            }
+          >
+            Portfolio — ananthu.onrender.com
+          </a>
         </footer>
       </div>
     </div>
